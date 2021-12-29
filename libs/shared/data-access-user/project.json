@@ -1,0 +1,34 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/data-access-user",
+  "sourceRoot": "libs/shared/data-access-user/src",
+  "prefix": "ng-mfe",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/shared/data-access-user"],
+      "options": {
+        "project": "libs/shared/data-access-user/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/shared/data-access-user/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/shared/data-access-user/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/data-access-user/src/**/*.ts",
+          "libs/shared/data-access-user/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

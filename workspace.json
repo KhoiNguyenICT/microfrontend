@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "dashboard": "apps/dashboard",
-    "login": "apps/login"
+    "login": "apps/login",
+    "shared-data-access-user": "libs/shared/data-access-user"
   }
 }
